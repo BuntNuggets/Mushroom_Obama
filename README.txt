@@ -1,3 +1,1 @@
-USE THIS BRANCH AS OUR TESTING GROUNDS.
-
-Main will be for stable iterations of our game.
+This is a branch i'm using to test things out with git and godot.
