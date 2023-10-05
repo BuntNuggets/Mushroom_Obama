@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://uaaje3dmjjto"]
+
+[ext_resource type="PackedScene" uid="uid://bjn12ed820uik" path="res://Scenes/dvd.tscn" id="1_0xllp"]
+
+[node name="Main" type="Node2D"]
+process_mode = 1
+
+[node name="DVD" parent="." instance=ExtResource("1_0xllp")]
