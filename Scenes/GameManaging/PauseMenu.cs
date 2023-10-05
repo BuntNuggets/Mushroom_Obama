@@ -1,4 +1,4 @@
-using Godot;
+	using Godot;
 
 public partial class PauseMenu : Control
 {
@@ -11,6 +11,7 @@ public partial class PauseMenu : Control
 	public override void _Ready()
 	{
 		Hide();
+		//game_manager = (GameManager)GetNode("/root/Main"); -in case we don't want the export anymore
 		game_manager.ToggleGamePaused += _OnGameManagerTogglePause;
 	}
 
@@ -24,6 +25,13 @@ public partial class PauseMenu : Control
 			Show();
 		else
 			Hide();
+	}
+	public void _OnResumeButtonPressed(){
+		game_manager.game_paused = false;
+	}
+	public void _OnQuitButtonPressed(){
+		//TODO: add a warning when quitting "unsaved data will be lost" popup
+		GetTree().Quit();
 	}
 
 }
