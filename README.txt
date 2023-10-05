@@ -1,1 +1,4 @@
-This is a branch i'm using to test things out with git and godot.
+I'm not sure what to put here really.
+This is our game! On the dev (or feature) branch.
+Very cool, very not bad! 
+WOWOWEEWA
